@@ -24,4 +24,15 @@ private:
 	Texture m_BackgroundTexture;
 	bool m_Playing = false;
 	bool m_Character1 = true;
+	bool m_SplitScreen = false;
+	float m_TimeRemaining = 10;
+	Time m_GameTimeTotal;
+	bool m_NewLevelRequired = true;
+	void input();
+	void update(float dtAsSeconds);
+	void draw();
+public:
+	Engine();
+	void run();
+
 };
